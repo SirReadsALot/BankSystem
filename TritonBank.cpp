@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <time.h>
 #ifdef _WIN32
 #include <Windows.h>
 #else
@@ -29,6 +30,12 @@ int main() {
         if (password == 124816) {
             cout << "You have successfully logged in!" << "\n";
             ofstream Credentials("credentials.txt");
+            // declaring argument of time()
+            time_t my_time = time(NULL);
+  
+            // ctime() used to give the present time
+            //printf("%s", ctime(&my_time));
+            return 0;
             Credentials << "Account Name: " + accName << "\n" << "Password: " + password;
             Credentials.close();
 

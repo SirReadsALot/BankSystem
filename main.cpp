@@ -20,8 +20,11 @@ class Account {
     void show_accData();
 };
 
-int main() {
-    void Account::create_account() {
-        cout << "\n";
-    }
+void Account::create_account() {
+     cout << "\n";
 }
+
+int main() {
+    cout << ."test" << std::endl;
+}
+
